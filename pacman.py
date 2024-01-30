@@ -75,6 +75,17 @@ lives = 3
 game_over = False
 game_won = False
 
+music = pygame.mixer.Sound('assets/audio/music.mp3')
+music.set_volume(0.15)
+music.play(loops = -1)
+
+waka_sound = pygame.mixer.Sound('assets/audio/PacmanWaka.mp3')
+waka_sound.set_volume(0.09)
+waka_sound.play(loops = -1)
+
+
+
+
 class Ghost:
     def __init__(self, x_coord, y_coord, target, speed, img, direct, dead, box, id):
         self.x_pos = x_coord
